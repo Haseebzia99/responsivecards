@@ -1,0 +1,168 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  left: 50%;
+  top: 50%;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  height: 100vh;
+}
+
+.row1 {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+
+.row2 {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+
+.card-trip {
+  overflow: hidden;
+  background: white;
+  width: 230px;
+  border-top: 8px solid #ff9600;
+  border-right: 1px solid #a69d9d;
+  border-bottom: 1px solid #a69d9d;
+  border-left: 1px solid #a69d9d;
+  box-shadow: 0 0 45px rgba(0,0,0,0.2);
+  margin: 8px;
+}
+
+.card-trip > img {
+  height: 100px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-trip .card-trip-infos {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  flex-direction: column;
+  height: 210px;
+}
+
+.card-trip-title {
+  position: absolute;
+  top: -10px;
+  color: black;
+  background-color: white;
+  width: 100%;
+  opacity: 0.9;
+  padding: 8px 0px;
+  border-bottom: 1px solid #a69d9d;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+  padding-left: 15px;
+}
+
+.card-trip-title-weight {
+  position: absolute;
+  top: -33px;
+  color: black;
+  background-color: white;
+  width: 100%;
+  opacity: 0.9;
+  padding: 8px 0px;
+  border-bottom: 1px solid #a69d9d;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+  padding-left: 15px;
+  height: 40px;
+}
+
+.card-trip .card-trip-body {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 15px 0px 15px;
+}
+
+.card-trip .fa-info-circle {
+  color: grey;
+  padding-right: 8px;
+  padding-top: 4px;
+}
+
+.card-trip p {
+  font-size: 12px;
+  margin: 0;
+}
+
+.card-trip-blue {
+  overflow: hidden;
+  background: white;
+  width: 230px;
+  border-top: 8px solid blue;
+  border-right: 1px solid #a69d9d;
+  border-bottom: 1px solid #a69d9d;
+  border-left: 1px solid #a69d9d;
+  box-shadow: 0 0 45px rgba(0,0,0,0.2);
+  margin: 8px;
+}
+
+.card-trip-blue > img {
+  height: 100px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-trip-blue .card-trip-infos {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  flex-direction: column;
+  height: 210px;
+}
+
+.card-trip-blue .card-trip-body {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 15px 0px 15px;
+}
+
+.card-trip-blue .fa-info-circle {
+  color: grey;
+  padding-right: 8px;
+  padding-top: 4px;
+}
+
+.card-trip-blue p {
+  font-size: 12px;
+  margin: 0;
+}
+
+.card-button {
+  margin: 0px 40px 10px 40px;
+  padding: 6px;
+  border: 1px solid grey;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 1000px){
+  .container {
+    height: 100vh;
+    display: inline-flex;
+  }
+  .row1,.row2 {
+    flex-flow: wrap;
+  }
+}
+
+@media only screen and (max-width: 850px){
+  .container {
+    height: 100vh;
+    display: inline-block;
+  }
+  .row1,.row2 {
+    flex-direction: column;
+  }
+}
